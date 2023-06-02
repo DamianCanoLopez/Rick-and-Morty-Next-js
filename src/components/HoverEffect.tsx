@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 interface Props {
     linkHref: string;
@@ -15,7 +14,7 @@ export default function HoverEffect({
     return (
         <Link className="group" href={linkHref}>
             <div className="w-full h-full relative">
-                <Image src={imgSrc} className="max-h-[300px] min-h-[200px]" alt="img"/>
+                <img src={imgSrc} className="max-h-[300px] min-h-[200px]" alt="img"/>
                 <div className="absolute bottom-0 bg-black opacity-25 group-hover:opacity-100 text-white w-full h-10 flex justify-center items-center">
                     <p className="text-xl text-ellipsis overflow-hidden whitespace-nowrap">
                         {characterName}
